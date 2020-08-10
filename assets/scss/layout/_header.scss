@@ -1,0 +1,26 @@
+/*estilos header*/
+.contenedor__header {
+    display:grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    background-color: red;
+}
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.nav {
+    display: inline-block;
+    width: 840px;
+    text-align: right;
+
+    &__a {  
+        text-decoration: none;
+        text-transform: uppercase; 
+    }
+}
+.nav__input {
+    border-radius: 30px;
+}
