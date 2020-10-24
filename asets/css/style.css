@@ -1,16 +1,11 @@
-@charset "UTF-8";
 /*Llamado a abstracts*/
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap");
 /*Llamado a layout*/
-body {
-  margin: 0;
-}
-
 .contenedor {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 .contenedor__nav {
   grid-column: 1/5;
@@ -88,40 +83,15 @@ body {
   }
 }
 
-.contenedor__nav {
+.nav {
   background-color: #121619;
-  padding: 0 30px;
-}
-
-.nav__logo {
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-size: 24px;
 }
 .nav__a {
   text-decoration: none;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-.nav__ul {
-  margin-top: 30px;
-  font-size: 19px;
-}
-.nav__aInvisi {
-  text-decoration: none;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-.nav__input {
-  padding: 5px;
 }
 
-.contenedor__footer {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: #121619;
-  color: #FFFFFF;
+.nav-aInvisi {
+  text-decoration: none;
 }
 
 /*Llamado a components*/
@@ -133,26 +103,18 @@ a {
   text-decoration: none;
 }
 
-button {
-  background-color: coral;
-  color: white;
-}
-
-input {
-  display: inline-block;
-  border-width: 0;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 30px;
-}
-
 /*Llamado a pages*/
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Vollkorn", serif;
+  font-family: monospace;
+}
+
+.contenedor {
+  width: 960px;
+  margin: 0 auto;
 }
 
 .menu {
@@ -166,6 +128,21 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.nav {
+  display: inline-block;
+  width: 840px;
+  text-align: right;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.input-menu {
+  border-radius: 30px;
 }
 
 .contenido {
@@ -229,20 +206,35 @@ body {
   height: 200px;
 }
 
-/*sección newsletter*/
-.contenedor__sectNewsletter {
-  background-color: #c4c7ca;
+.newsletter {
+  width: 960px;
+  background-color: #f2f4f5;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 49.92px;
+  padding-bottom: 30px;
 }
 
-.contenedor-sectNewsletter__group button {
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.group input,
+.group button {
   display: inline-block;
   border-width: 0;
-  font-size: 16px;
+  font-size: 13px;
   padding: 5px 10px;
-  border-radius: 30px;
+}
+
+.group button {
+  background-color: coral;
+  color: white;
+}
+
+.footer {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

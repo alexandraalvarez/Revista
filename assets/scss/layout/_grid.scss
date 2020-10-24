@@ -1,9 +1,13 @@
 //grilla contenedor y bloques hijos
+body {
+    margin: 0;
+}
 .contenedor {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    //grid-row-gap: 10px;
 
     &__nav {
         grid-column: 1 / 5;
@@ -81,56 +85,7 @@
             display: none;
         }
     }
-
     
 }
     
     
-/*.main{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-
-  &__navbar {
-      grid-column: 1 / 5;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      &__brand {
-          grid-column: 1 / 4;
-      }
-      &__links {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-      }
-  }
-
-  &__news {
-      grid-column: 1 / 4;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      @media screen and (max-width: $bp-md) {
-          grid-column: 1 / 4;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-      }
-      @media screen and (max-width: $bp-sm) {
-          grid-column: 1 / 5;
-          display: grid;
-          grid-template-columns: 1fr;
-      }
-  }
-
-  &__sidebar {
-      grid-column: 4 / 5;
-      @media screen and (max-width: $bp-sm) {
-          
-              display: none;
-          
-      }
-  }
-
-  &__footer {
-      grid-column: 1 / 5;
-  }
-}*/
