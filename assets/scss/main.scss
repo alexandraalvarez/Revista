@@ -1,6 +1,6 @@
 // Llamado a abstracts
-//@import'abstracts/variables';
-//@import'abstracts/mixins';
+@import'abstracts/variables';
+@import'abstracts/mixins';
 
 // Llamado a vendors
 
@@ -8,7 +8,7 @@
 //@import'base/typography';
 
 // Llamado a layout
-//@import'layout/grid';
+@import'layout/grid';
 //@import'layout/header';
 //@import'layout/footer';
 
